@@ -16,9 +16,8 @@
     </style>
 </head>
 <body>
-    
-    <header class="bg-primary text-white py-3">
-        
+    <div class="container">
+        <header class="bg-primary text-white py-3">
             <h1 class="text-center">ROMs Event and Decor</h1>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="index.html">ROMs Event and Decor</a>
@@ -45,60 +44,14 @@
                     </ul>
                 </div>
             </nav>
-       
-    </header>
-
+        </header>
+    </div>
 
     <main>
-        <div class="container">
         <section id="home" class="jumbotron jumbotron-fluid text-center bg-primary text-white mb-0">
             <div class="container">
                 <h2 class="display-4">Your Source for ROMs Event and Themed Decor</h2>
                 <p class="lead">Discover the latest events and decor ideas to make your ROMs experiences unforgettable.</p>
-            </div>
-        </section>
-
-        <section id="auth" class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 form-container">
-                        <div id="login-form">
-                            <h2 class="text-center">Login</h2>
-                            <form>
-                                <div class="form-group">
-                                    <label for="login-email">Email address</label>
-                                    <input type="email" class="form-control" id="login-email" placeholder="Your Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="login-password">Password</label>
-                                    <input type="password" class="form-control" id="login-password" placeholder="Password" required>
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-block">Login</button>
-                                <p class="text-center mt-3">Don't have an account? <a href="#" id="switch-to-signup">Create an Account</a></p>
-                            </form>
-                        </div>
-
-                        <div id="signup-form" style="display: none;">
-                            <h2 class="text-center">Create an Account</h2>
-                            <form>
-                                <div class="form-group">
-                                    <label for="create-name">Full Name</label>
-                                    <input type="text" class="form-control" id="create-name" placeholder="Your Full Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="create-email">Email address</label>
-                                    <input type="email" class="form-control" id="create-email" placeholder="Your Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="create-password">Password</label>
-                                    <input type="password" class="form-control" id="create-password" placeholder="Password" required>
-                                </div>
-                                <button type="submit" class="btn btn-success btn-block">Create Account</button>
-                                <p class="text-center mt-3">Already have an account? <a href="#" id="switch-to-login">Login</a></p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
@@ -120,19 +73,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script>
-        document.getElementById('switch-to-signup').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.getElementById('login-form').style.display = 'none';
-            document.getElementById('signup-form').style.display = 'block';
-        });
-
-        document.getElementById('switch-to-login').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.getElementById('signup-form').style.display = 'none';
-            document.getElementById('login-form').style.display = 'block';
-        });
-    </script>
 </body>
 </html>
