@@ -8,6 +8,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
     <header class="bg-primary text-white py-3">
@@ -49,47 +55,45 @@
             </div>
         </section>
 
-        <section id="login" class="py-5">
+        <section id="auth" class="py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 mx-auto">
-                        <h2 class="text-center">Login</h2>
-                        <form>
-                            <div class="form-group">
-                                <label for="login-email">Email address</label>
-                                <input type="email" class="form-control" id="login-email" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="login-password">Password</label>
-                                <input type="password" class="form-control" id="login-password" placeholder="Password" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block">Login</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <div class="col-md-6 form-container">
+                        <div id="login-form">
+                            <h2 class="text-center">Login</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="login-email">Email address</label>
+                                    <input type="email" class="form-control" id="login-email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="login-password">Password</label>
+                                    <input type="password" class="form-control" id="login-password" placeholder="Password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                <p class="text-center mt-3">Don't have an account? <a href="#" id="switch-to-signup">Create an Account</a></p>
+                            </form>
+                        </div>
 
-        <section id="create-account" class="bg-light py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 mx-auto">
-                        <h2 class="text-center">Create an Account</h2>
-                        <form>
-                            <div class="form-group">
-                                <label for="create-name">Full Name</label>
-                                <input type="text" class="form-control" id="create-name" placeholder="Your Full Name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="create-email">Email address</label>
-                                <input type="email" class="form-control" id="create-email" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="create-password">Password</label>
-                                <input type="password" class="form-control" id="create-password" placeholder="Password" required>
-                            </div>
-                            <button type="submit" class="btn btn-success btn-block">Create Account</button>
-                        </form>
+                        <div id="signup-form" style="display: none;">
+                            <h2 class="text-center">Create an Account</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="create-name">Full Name</label>
+                                    <input type="text" class="form-control" id="create-name" placeholder="Your Full Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="create-email">Email address</label>
+                                    <input type="email" class="form-control" id="create-email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="create-password">Password</label>
+                                    <input type="password" class="form-control" id="create-password" placeholder="Password" required>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">Create Account</button>
+                                <p class="text-center mt-3">Already have an account? <a href="#" id="switch-to-login">Login</a></p>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,6 +118,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
+    <script>
+        document.getElementById('switch-to-signup').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('signup-form').style.display = 'block';
+        });
+
+        document.getElementById('switch-to-login').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('signup-form').style.display = 'none';
+            document.getElementById('login-form').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
