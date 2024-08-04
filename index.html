@@ -4,31 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROMs Events & Decor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1> ROMs Events & Decor</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="decor.html">Decor</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <h1 class="text-center">ROMs Events & Decor</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">ROMs Events & Decor</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="decor.html">Decor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="hero">
-            <h2>Your Source for ROMs Events & Themed Decor</h2>
-            <p>Discover the latest events and decor ideas to make your ROMs experiences unforgettable.</p>
+        <section id="hero" class="jumbotron jumbotron-fluid text-center">
+            <div class="container">
+                <h2 class="display-4">Your Source for ROMs Events & Themed Decor</h2>
+                <p class="lead">Discover the latest events and decor ideas to make your ROMs experiences unforgettable.</p>
+            </div>
         </section>
         <!-- More sections here -->
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 ROMs Events & Decor</p>
     </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
     <script src="js/scripts.js"></script>
 </body>
 </html>
