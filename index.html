@@ -19,39 +19,118 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="events.html">Events</a>
+                            <a class="nav-link" href="#about">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="decor.html">Decor</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link" href="#pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
+
     <main>
-        <section id="hero" class="jumbotron jumbotron-fluid text-center">
+        <section id="home" class="jumbotron jumbotron-fluid text-center bg-primary text-white mb-0">
             <div class="container">
                 <h2 class="display-4">Your Source for ROMs Events & Themed Decor</h2>
                 <p class="lead">Discover the latest events and decor ideas to make your ROMs experiences unforgettable.</p>
             </div>
         </section>
-        <!-- More sections here -->
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center">About Us</h2>
+                <p class="text-center">We are dedicated to providing exceptional event planning and themed decor to make your ROMs celebrations special. Our team is passionate about creating memorable experiences through unique and personalized event design.</p>
+            </div>
+        </section>
+
+        <section id="services" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center">Services</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h3>Event Planning</h3>
+                        <p>Expert event planning services to ensure your ROMs event is flawless from start to finish.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3>Themed Decor</h3>
+                        <p>Creative and customized decor to match your event’s theme and make it truly memorable.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3>Consultation</h3>
+                        <p>Personalized consultation to help you choose the best event design and decor for your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Pricing</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Basic Package</h4>
+                        <p>$500 - Includes basic event planning and decor setup.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Standard Package</h4>
+                        <p>$1000 - Includes event planning, themed decor, and consultation.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Premium Package</h4>
+                        <p>$2000 - Comprehensive service including event planning, bespoke decor, and full consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center">Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 ROMs Events & Decor</p>
+
+    <footer class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h3>Stay Connected</h3>
+            <p>Follow us on social media and stay updated with our latest events and decor ideas.</p>
+            <div class="social-media mb-3">
+                <a href="#" class="text-white mx-2">Facebook</a>
+                <a href="#" class="text-white mx-2">Twitter</a>
+                <a href="#" class="text-white mx-2">Instagram</a>
+            </div>
+            <p>&copy; 2024 ROMs Events & Decor. All rights reserved.</p>
+        </div>
     </footer>
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
