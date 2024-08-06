@@ -12,6 +12,15 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .service-item {
+            cursor: pointer;
+        }
+        .service-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -44,33 +53,49 @@
                 <!-- Service Item -->
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="service-item bg-faded p-4 rounded">
-                        <img class="img-fluid mb-3" src="assets/img/birthday-party.jpg" alt="Birthday Party" />
-                        <h3 class="text-center">Birthday Parties</h3>
-                        <p>Celebrate your special day with a beautifully designed birthday party. From thematic decorations to personalized touches, we handle every detail to ensure a memorable celebration.</p>
+                        <div data-bs-toggle="collapse" data-bs-target="#service1" class="d-flex align-items-center">
+                            <img class="img-fluid mb-3" src="assets/img/birthday-party.jpg" alt="Birthday Party" />
+                            <h3 class="text-center ms-3">Birthday Parties</h3>
+                        </div>
+                        <div id="service1" class="collapse">
+                            <p>Celebrate your special day with a beautifully designed birthday party. From thematic decorations to personalized touches, we handle every detail to ensure a memorable celebration.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Service Item -->
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="service-item bg-faded p-4 rounded">
-                        <img class="img-fluid mb-3" src="assets/img/graduation-party.jpg" alt="Graduation Party" />
-                        <h3 class="text-center">Graduation Parties</h3>
-                        <p>Honor your academic achievements with a graduation party that stands out. Our team provides elegant setups and festive decorations to mark this significant milestone in style.</p>
+                        <div data-bs-toggle="collapse" data-bs-target="#service2" class="d-flex align-items-center">
+                            <img class="img-fluid mb-3" src="assets/img/graduation-party.jpg" alt="Graduation Party" />
+                            <h3 class="text-center ms-3">Graduation Parties</h3>
+                        </div>
+                        <div id="service2" class="collapse">
+                            <p>Honor your academic achievements with a graduation party that stands out. Our team provides elegant setups and festive decorations to mark this significant milestone in style.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Service Item -->
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="service-item bg-faded p-4 rounded">
-                        <img class="img-fluid mb-3" src="assets/img/ruracio-party.jpg" alt="Ruracio Party" />
-                        <h3 class="text-center">Ruracio Parties</h3>
-                        <p>Experience the beauty of traditional ceremonies with our expertly planned Ruracio events. We take care of all the details to ensure a seamless and culturally rich celebration.</p>
+                        <div data-bs-toggle="collapse" data-bs-target="#service3" class="d-flex align-items-center">
+                            <img class="img-fluid mb-3" src="assets/img/ruracio-party.jpg" alt="Ruracio Party" />
+                            <h3 class="text-center ms-3">Ruracio Parties</h3>
+                        </div>
+                        <div id="service3" class="collapse">
+                            <p>Experience the beauty of traditional ceremonies with our expertly planned Ruracio events. We take care of all the details to ensure a seamless and culturally rich celebration.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Service Item -->
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="service-item bg-faded p-4 rounded">
-                        <img class="img-fluid mb-3" src="assets/img/baby-shower.jpg" alt="Baby Shower" />
-                        <h3 class="text-center">Baby Showers</h3>
-                        <p>Welcome your new bundle of joy with a charming baby shower. Our team designs delightful themes and decor to create a warm and festive atmosphere for this special occasion.</p>
+                        <div data-bs-toggle="collapse" data-bs-target="#service4" class="d-flex align-items-center">
+                            <img class="img-fluid mb-3" src="assets/img/baby-shower.jpg" alt="Baby Shower" />
+                            <h3 class="text-center ms-3">Baby Showers</h3>
+                        </div>
+                        <div id="service4" class="collapse">
+                            <p>Welcome your new bundle of joy with a charming baby shower. Our team designs delightful themes and decor to create a warm and festive atmosphere for this special occasion.</p>
+                        </div>
                     </div>
                 </div>
             </div>
